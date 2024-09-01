@@ -1,35 +1,43 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-    <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php bloginfo('name'); ?></title>
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-    <?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?>>
-    <header>
-        <h1><?php bloginfo('name'); ?></h1>
-        <p><?php bloginfo('description'); ?></p>
-    </header>
+<?php
+/* 
+*This template for displaying the Header
+*/
+get_header();
+the_post();
+?>
+    <div class="blog-content-aira">
+        <?php if (have_posts()) :
+              while (have_posts()) : the_post(); ?>
+        <div class="blog_aria">
+            <div class="post_thumb">
+                        <a href="<?php the_permalink(); ?>"><?php echo the_post_thumbnail('post-thumbnails'); ?></a>
+                    </div>
+                    <div class="post_details">
+                        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                        <?php the_excerpt(); ?>
+            </div>
+            <?php endwhile;
+                else :
+                _e('No post found');
+                endif; ?>
+        <div class="blog_aria-footer"> 
+            <?php get_sidebar();  ?>
+        </div>
+    </div>
 
-    <main>
-        <?php
-        if ( have_posts() ) :
-            while ( have_posts() ) : the_post();
-                the_title('<h2>', '</h2>');
-                the_content();
-            endwhile;
-        else :
-            echo '<p>No content found</p>';
-        endif;
-        ?>
-    </main>
+    <div class="container">
+        <div id="page_nav">
+                <?php if (true) {sohag_pagenav(); } else{ ?>
+                    <?php next_posts_link(); ?>
+                    <?php previous_posts_link(); ?>
+                <?php } ?>
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; <?php echo date('Y'); ?> Midwest Trucks. All rights reserved.</p>
-    </footer>
-
-    <?php wp_footer(); ?>
-</body>
-</html>
+    <div class="sohag_content">
+        <?php the_content();  ?> 
+    </div>
+    
+<?php 
+    get_footer();
+?>

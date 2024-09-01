@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* nav bar design ------------------------------------------ */
+nav{
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, .1);
+}
+.nav_bar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.nav_logo {
+    width: 213px;
+    margin-left: 27px;
+    display: flex;
+    align-items: center;
+    height: 51.38px;
+    margin-top: 16px;
+}
+.nav_logo img{
+    max-height:51.38px;
+}
+.nav_links.flex{
+    gap: 80px;
+    align-items: center;
+}
+ul#nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 24.34px;
+}
+#nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 24.34px;
+}
+#nav li a{
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+}
+ul#nav li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#nav li:last-child{
+    width: 190px;
+    height: 80px;
+    background-color: #b83926;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+}
+#nav li:last-child a{
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+}
+/* menu bar position */
+nav .left_menu .nav_logo{
+    order: 2 !important;
+}
+nav .center_menu {
+    flex-direction: column;
+}
+
+h3.wp-block-heading {
+    line-height: 1.4;
+}
+.wp-block-group.alignfull {
+    margin: 0% 40px;
+}
+img.wp-block-cover__image-background.wp-image-79 {
+    border-radius: 25px;
+}
+
+
+
+
+
+/* -- start Footer ------------- -- */
+.footer_top{
+    height: 425px;
+    background-color: #171717;
+    padding: 60px 4%;
+}
+.footer_top_docu{
+    width: 773px;
+}
+.footer_top_docu img{
+    width: 219px;
+    margin-left: -10px;
+    margin-bottom: 30px;
+}
+.footer_top_docu p{
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.2px;
+}
+.footer_top_docu p:nth-child(3){
+    letter-spacing: -1px;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.footer_links{
+    margin-top: 8px;
+    width: 472px;
+}
+.footer_links_ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+.footer_links_ul a{
+    text-decoration: underline;
+    color: #fff;
+    font-size: 14px;
+}
+.footer_top_contUs{
+    color: #fff;
+    width: 525px;
+}
+.footer_top_contUs h2{
+    position: relative;
+    font-size: 17px;
+}
+.footer_top_contUs h2::after{
+    content: "";
+    width: 86px;
+    border: 2px solid #c9402b;
+    position: absolute;
+    top: 36px;
+    left: 0px;
+}
+.footer_top_contUs img{
+    width: 24px;
+}
+.footer_top_contUs p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.contUs_ph_mail{
+    margin-top: 43px;
+}
+.contUs_ph_mail.flex{
+    justify-content: flex-start;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+.phone.flex, .mail.flex, .location.flex{
+    justify-content: flex-start;
+    gap: 15px;
+}
+.footer_bottom{
+    height: 85px;
+    padding: 0 4%;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* post aria */
+
+div.blog-content-aira{
+    display: grid;
+    /* grid-template-columns: 4fr 1fr; */
+}
+.footer_sideber {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    background: #171717;
+    color: #fff;
+}
+.child_sidebar img {
+    width: 219px;
+}
+
+
+.wp_pagenav {
+    display: flex;
+    gap: 20px;
+    background: #b83926;
+    padding: 10px 0;
+    margin: 20px 0;
+    color: #fff;
+    height: 40px;
+}
+.wp_pagenav a{
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+
+}
