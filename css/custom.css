@@ -229,5 +229,10 @@ div.blog-content-aira{
     color: #fff;
     display: inline-block;
     height: 40px;
-
+}
+p.pages {
+    padding-left: 23px;
+}
+.home .widget {
+    display: none;
 }

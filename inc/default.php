@@ -45,7 +45,7 @@ function sohag_pagenav() {
   if ($max > 1) {
       echo '<div class="wp_pagenav">';
       if ($max > 1) {
-          $pages = '<p class="pages">Page ' . $current . ' <span>of</span> ' . $max . '</p>';
+          $pages = '<p class="pages">Page ' . $current . ' <span> of </span> ' . $max . ' </p>';
       }
       echo $pages . paginate_links($args);
       echo '</div>';

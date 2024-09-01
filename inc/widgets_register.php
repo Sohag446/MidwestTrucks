@@ -12,9 +12,7 @@ function sohag_widgets_register(){
         'before_widget' => '<div class="child_sidebar">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="title">',
-        'after_title' => '</h2>',
-
-    
+        'after_title' => '</h2>',  
     ));
 
     register_sidebar( array(

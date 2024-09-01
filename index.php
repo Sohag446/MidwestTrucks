@@ -25,14 +25,13 @@ the_post();
         </div>
     </div>
 
-    <div class="container">
-        <div id="page_nav">
-                <?php if (true) {sohag_pagenav(); } else{ ?>
-                    <?php next_posts_link(); ?>
-                    <?php previous_posts_link(); ?>
-                <?php } ?>
-        </div>
+    <div id="page_nav">
+        <?php if (true) {sohag_pagenav(); } else{ ?>
+        <?php next_posts_link(); ?>
+        <?php previous_posts_link(); ?>
+        <?php } ?>
     </div>
+
 
     <div class="sohag_content">
         <?php the_content();  ?> 
