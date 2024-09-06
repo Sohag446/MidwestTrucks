@@ -3,26 +3,34 @@
 *This template for displaying the Header
 */
 get_header();
-the_post();
 ?>
-    <div class="blog-content-aira">
+<div class="blog-content-aira">
+    <div class="blog_aria-header">
         <?php if (have_posts()) :
-              while (have_posts()) : the_post(); ?>
-        <div class="blog_aria">
-            <div class="post_thumb">
-                        <a href="<?php the_permalink(); ?>"><?php echo the_post_thumbnail('post-thumbnails'); ?></a>
+            while (have_posts()) : the_post(); ?>
+                <div class="blog_aria">
+                    <div class="post_thumb">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php the_post_thumbnail('post-thumbnails'); ?>
+                        </a>
                     </div>
                     <div class="post_details">
                         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                         <?php the_excerpt(); ?>
-            </div>
+                    </div>
+                </div>
             <?php endwhile;
-                else :
-                _e('No post found');
-                endif; ?>
-        <div class="blog_aria-footer"> 
-            <?php get_sidebar();  ?>
-        </div>
+        else :
+            echo '<p>No posts found</p>';
+        endif; ?>
+    </div>
+    <div class="blog_aria-footer"> 
+        <?php get_sidebar(); ?>
+    </div>
+</div>
+
+<div class="sohag_content">
+        <?php the_content();  ?> 
     </div>
 
     <div id="page_nav">
@@ -33,9 +41,7 @@ the_post();
     </div>
 
 
-    <div class="sohag_content">
-        <?php the_content();  ?> 
-    </div>
+    
     
 <?php 
     get_footer();

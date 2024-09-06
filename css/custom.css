@@ -200,22 +200,19 @@ img.wp-block-cover__image-background.wp-image-79 {
 }
 
 /* post aria */
-
 div.blog-content-aira{
     display: grid;
-    /* grid-template-columns: 4fr 1fr; */
+    grid-template-columns: 4fr 1fr;
 }
 .footer_sideber {
     display: grid;
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 3fr 2fr;
     background: #171717;
     color: #fff;
 }
 .child_sidebar img {
     width: 219px;
 }
-
-
 .wp_pagenav {
     display: flex;
     gap: 20px;
@@ -235,4 +232,90 @@ p.pages {
 }
 .home .widget {
     display: none;
+}
+.blog_aria-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.blog_aria-header div{
+    margin: 15px;
+    background-color:#eeeeee;
+    border-radius: 5px;
+}
+
+.our_brand, .our_products{
+    border-radius: 15px;
+    padding: 10px;
+}
+p.has-vivid-red-color.has-text-color.has-link-color.wp-elements-3c54c2a25a0bbd9bf19e6348d95d0043 {
+    background: #ededed;
+    padding: 11px 10px;
+}
+.MWTPR_class div{
+    border-radius: 15px;
+}
+
+.home .blog_aria-footer {
+    display: none;
+}
+.home .blog-content-aira{
+    display: none;
+}
+.child_sidebar a {
+    color: #fff;
+    text-decoration: underline;
+}
+.child_sidebar {
+    padding-left: 45px;
+}
+.child_sidebar .is-layout-flex {
+    gap: 10px;
+}
+
+.heading_after{
+    position: relative;
+}
+.heading_after::after{
+    content: "";
+    width: 86px;
+    border: 2px solid #c9402b;
+    position: absolute;
+    top: 36px;
+    left: 0px;
+}
+.be_after, .we_after, .brand_after{position: relative;}
+.be_after::after {
+    content: "";
+    width: 122px;
+    border: 3px solid #c9402b;
+    position: absolute;
+    top: 72px;
+    left: 0px;
+}
+.we_after::after{
+    content: "";
+    width: 86px;
+    border: 2px solid #c9402b;
+    position: absolute;
+    top: 38px;
+    left: 0px;
+}
+.brand_after::after {
+    content: "";
+    width: 117px;
+    border: 2px solid #c9402b;
+    position: absolute;
+    top: 48px;
+    left: 0px;
+}
+.world_btn{
+
+}
+/* .sohag_content {
+    display: none;
+} */
+
+h4 {
+    font-size: 1.3rem;
+    color: #ff634e;
 }
